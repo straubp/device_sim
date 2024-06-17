@@ -27,3 +27,6 @@
 
 ## 0.1.2
 * removed unnecessary build loop
+
+## 0.1.3
+* fix debugDefaultTargetPlatformOverride error

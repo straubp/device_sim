@@ -56,9 +56,10 @@ class _DeviceSimState extends State<DeviceSim> {
   }
 
   void _updateTargetPlatform() {
-    debugDefaultTargetPlatformOverride = _isEnabled() && deviceEnabled
-        ? currentDevice.screenConfiguration.targetPlatform
-        : null;
+    if (_isEnabled() && deviceEnabled) {
+      debugDefaultTargetPlatformOverride =
+          currentDevice.screenConfiguration.targetPlatform;
+    }
   }
 
   bool _isEnabled() {
